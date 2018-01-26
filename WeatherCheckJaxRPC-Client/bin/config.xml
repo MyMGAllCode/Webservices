@@ -1,0 +1,6 @@
+<configuration  xmlns="http://java.sun.com/xml/ns/jax-rpc/ri/config">
+<wsdl location="http://www.webservicex.net/globalweather.asmx?wsdl" packageName="com.nareshit.proxy"></wsdl>
+
+
+
+</configuration>
