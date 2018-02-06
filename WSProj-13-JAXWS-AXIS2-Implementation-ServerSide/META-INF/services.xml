@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.4  Built on : Oct 21, 2016 (10:47:34 BST) -->
+<serviceGroup>
+    <service name="BookServiceImplService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.bookservice.sevices.BookServiceImplServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.bookservice.sevices.BookServiceImplServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="searchBook" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://sevices.bookService.com">
+            <actionMapping>http://sevices.bookService.com/BookServiceImpl/searchBookRequest</actionMapping>
+            <outputActionMapping>http://sevices.bookService.com/BookServiceImpl/searchBookResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
