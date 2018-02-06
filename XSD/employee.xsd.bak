@@ -1,0 +1,6 @@
+<xs:schema targetnamespace="http://empinfo.com" xmlns="http://www.w3.org/2001/xmlschema">
+<xs:element name="employee">
+<xs:ComplexType>
+</xs:ComplexType>
+</xs:element>
+</xs:schema>

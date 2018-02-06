@@ -1,0 +1,41 @@
+<!-- User Drived Non Atomic XSD for Union type  -->
+
+<xs:schema targetNamespace="http://empinfo.com" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:emp="http://empinfo.com"  elementFormDefault="qualified">
+<!-- xmlns:xs="http://www.w3.org/2001/XMLSchema" xs is optional to write  -->
+
+
+<xs:simpleType name="RunningRace">
+<xs:restriction base="xs:string">
+<xs:enumeration value="100meters"/>
+<xs:enumeration value="10miles"/>
+<xs:enumeration value="10KM"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Gymnastic">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Floor"/>
+<xs:enumeration value="Ring"/>
+<xs:enumeration value="Beam"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="eventType">
+<xs:union numberType="emp:RunningRace emp:Gymnastic"/>
+
+</xs:simpleType>
+
+
+<element name="program">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Event" type ="eventType" minOccurs="1" maxOccurs="unbounded"/> <!--  RootElement    -->
+
+</xs:sequence>
+</xs:complexType>
+</element>
+</xs:schema>
+
+

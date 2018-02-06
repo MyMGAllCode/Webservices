@@ -1,0 +1,10 @@
+<employee xmlns="http://empinfo.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://empinfo.com D:\HyderaBadTraing\XSD\FirstNameThreeUppercase.xsd">
+
+
+<FirstName>DKP</FirstName>
+<zipcode>462022</zipcode>
+<zip>123456</zip>
+<username>Kp1</username>
+<Gender>O</Gender>
+</employee>

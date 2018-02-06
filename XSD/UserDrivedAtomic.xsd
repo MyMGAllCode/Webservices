@@ -1,0 +1,39 @@
+<!-- Acceptable Values Should be three Uppercase Latters -->
+
+<schema targetNamespace="http://empinfo.com" 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:emp="http://empinfo.com"  elementFormDefault="qualified">
+<!--  RootElement    -->
+
+
+<simpleType name="NumberType">
+<restriction base="int">
+<minInclusive value="1001"/>
+<maxInclusive value="10000"/>
+</restriction>
+</simpleType>
+
+<simpleType name="jobType">
+<restriction base="string">
+<enumeration value="sales"/>
+<enumeration value="marketing"/>
+<enumeration value="admin"/>
+</restriction>
+</simpleType>
+
+
+<element name="employee"> 
+<complexType>
+<sequence>
+
+<element name="empNo" type="emp:NumberType"/>
+<element name="name" type="string"/>
+<element name="job" type="emp:jobType"/>
+
+
+</sequence>
+</complexType>
+</element>
+</schema>
+
+

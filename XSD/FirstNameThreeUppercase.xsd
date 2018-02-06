@@ -1,0 +1,112 @@
+<!-- Acceptable Values Should be three Uppercase Latters -->
+
+<schema targetNamespace="http://empinfo.com" xmlns="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified">
+<element name="employee">
+<complexType>
+<sequence>
+
+<!-- FirstName validation using Pattern -->
+
+<element name="FirstName">
+<simpleType>
+<restriction base="string">
+<pattern value="[A-Z][A-Z][A-Z]"/>
+</restriction>
+</simpleType>
+</element>
+
+
+<!-- Zipcode validation using Pattern -->
+
+<element name="zipcode">
+<simpleType>
+<restriction base="string">
+<pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]"/>
+</restriction>
+</simpleType>
+</element>
+
+<!-- Zipcode validation using Pattern -->
+
+<element name="zip">
+<simpleType>
+<restriction base="string">
+<pattern value="[0-9]{6}"/>
+</restriction>
+</simpleType>
+</element>
+
+<!-- UserName validation using Pattern -->
+
+<element name="username">
+<simpleType>
+<restriction base="string">
+<pattern value="[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9]"/>
+</restriction>
+</simpleType>
+</element>
+
+<!-- Gender validation using Pattern -->
+
+<element name="Gender">
+<simpleType>
+<restriction base="string">
+<pattern value="[MFO]"/>
+</restriction>
+</simpleType>
+</element>
+
+<!-- Gender validation using Pattern -->
+
+<element name="Gen">
+<simpleType>
+<restriction base="string">
+<pattern value="male|female|other"/>
+</restriction>
+</simpleType>
+</element>
+<!-- Password  validation using Pattern (Min length4 character and max 10 character ) -->
+
+<element name="password">
+<simpleType>
+<restriction base="string">
+<minLength value="4"/>
+<maxLength value="10"/>
+
+</restriction>
+</simpleType>
+</element>
+<!-- Password  validation using Pattern Any Character with length -->
+
+<element name="pswd">
+<simpleType>
+<restriction base="string">
+<pattern value="[a-zA-Z]{6}"/>
+
+</restriction>
+</simpleType>
+</element>
+
+<!-- Job Type validation using enumeration sales or Marketing-->
+
+<element name="job">
+<simpleType>
+<restriction base="string">
+<enumeration value="sales"/>
+<enumeration value="marketing"/>
+
+</restriction>
+</simpleType>
+</element>
+
+
+
+
+
+</sequence>
+</complexType>
+</element>
+</schema>
+
+

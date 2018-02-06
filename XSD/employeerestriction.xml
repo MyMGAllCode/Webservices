@@ -1,0 +1,6 @@
+<employee xmlns="http://empinfo.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://empinfo.com D:\HyderaBadTraing\XSD\employeerestriction.xsd">
+<empNo>102</empNo>
+<name>Dharmendra</name>
+<salary>80000</salary>
+</employee>

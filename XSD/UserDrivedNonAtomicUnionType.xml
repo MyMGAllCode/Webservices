@@ -1,0 +1,13 @@
+<program xmlns="http://empinfo.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://empinfo.com 
+D:\HyderaBadTraing\XSD\UserDrivedNonAtomicUnionType.xsd">
+
+
+
+<Event>100miles</Event>
+
+
+<Event>10KM</Event>
+<Event>Floor</Event>
+</program>

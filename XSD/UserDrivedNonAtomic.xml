@@ -1,0 +1,14 @@
+<employee xmlns="http://empinfo.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://empinfo.com 
+D:\HyderaBadTraing\XSD\UserDrivedNonAtomic.xsd">
+
+
+
+<empNo>1001</empNo>
+<name>Dharmendra</name>
+<salary>85000</salary>
+<mobile>8888888 88445454 4453545545</mobile>
+<vacationDays> 2016-10-25 2016-10-26 2016-10-27</vacationDays>
+
+</employee>

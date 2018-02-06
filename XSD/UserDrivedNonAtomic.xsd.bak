@@ -1,0 +1,41 @@
+<!-- User Drived Non Atomic XSD for list type  -->
+
+<schema targetNamespace="http://empinfo.com" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:emp="http://empinfo.com"  elementFormDefault="qualified">
+<!-- xmlns:xs="http://www.w3.org/2001/XMLSchema" xs is optional to write  -->
+
+
+<xs:simpleType name="salaryType">
+<xs:restriction base="int">
+<xs:minInclusive value="9000"/>
+<xs:maxInclusive value="100000"/>
+<xs:fractionDigits value="2"/>
+<xs:totalDigits value="8"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="jobType">
+<xs:restriction base="string">
+<xs:enumeration value="sales"/>
+<xs:enumeration value="marketing"/>
+<xs:enumeration value="admin"/>
+</xs:restriction>
+</xs:simpleType>
+
+
+<element name="employee"> <!--  RootElement    -->
+<complexType>
+<sequence>
+
+<element name="empNo" type="emp:NumberType"/>
+<element name="name" type="string"/>
+<element name="job" type="emp:jobType"/>
+
+
+</sequence>
+</complexType>
+</element>
+</schema>
+
+

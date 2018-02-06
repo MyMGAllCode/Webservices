@@ -1,0 +1,44 @@
+<!-- User Drived Non Atomic XSD for Union type  -->
+
+<xs:schema targetNamespace="http://empinfo.com" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:emp="http://empinfo.com"  elementFormDefault="qualified">
+<!-- xmlns:xs="http://www.w3.org/2001/XMLSchema" xs is optional to write  -->
+
+
+<xs:simpleType name="salaryType">
+<xs:restriction base="xs:decimal">
+<xs:minInclusive value="9000"/>
+<xs:maxInclusive value="100000"/>
+<xs:fractionDigits value="2"/>
+<xs:totalDigits value="8"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="phoneNumber">
+<xs:list itemType="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="DateType">
+<xs:list itemType="xs:date"/>
+
+</xs:simpleType>
+
+
+<xs:element name="employee"> <!--  RootElement    -->
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="empNo" type="xs:int"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="salary" type="emp:salaryType"/>
+<xs:element name="mobile" type="emp:phoneNumber"/>
+<xs:element name="vacationDays" type="emp:DateType"/>
+
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+
